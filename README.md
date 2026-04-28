@@ -1,7 +1,7 @@
 # Business Empire — Data Science Final Submission
 
 **Course:** RCEL 506 — Data Science  
-**Author:** Maiky Artazos  
+**Author:** Miguel Artazos  
 **Term:** Spring 2026
 
 A data science project that uses card data, seeded simulations, ridge regression, and bot benchmarks to find balance problems before physical playtesting.
