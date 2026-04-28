@@ -1,0 +1,1757 @@
+{
+  "metric_direction": {
+    "overall_balance": "higher_is_better",
+    "slot_cv": "lower_is_better",
+    "zone_parity": "lower_is_better",
+    "industry_coverage": "higher_is_better",
+    "affinity_balance": "lower_is_better",
+    "centro_vs_barrio": "target_is_about_2.0",
+    "zone_gap": "lower_is_better"
+  },
+  "graph_metric_direction": {
+    "frame_betweenness_gap": "lower_is_better",
+    "frame_closeness_std": "lower_is_better",
+    "slot_distance_to_plaza_mean": "descriptive_only",
+    "slot_betweenness_top_share": "lower_is_better"
+  },
+  "config": {
+    "player_counts": [
+      2,
+      3,
+      4
+    ],
+    "baseline_boards": 24,
+    "search_boards": 10,
+    "final_verification_boards": 48,
+    "dynamic_search_simulations": 6,
+    "dynamic_verification_simulations": 12,
+    "dynamic_player_count": 2,
+    "dynamic_strategies": [
+      "Random",
+      "Greedy_VP",
+      "Cash_Machine",
+      "Balanced_Tempo"
+    ],
+    "max_accepted_changes": 2,
+    "minimum_improvement": 0.002,
+    "zone_gap_tolerance": 0.01,
+    "allow_global_fee_changes": false,
+    "base_seed": 20260409
+  },
+  "baseline": {
+    "by_player_count": {
+      "2": {
+        "mean_slot_cv": 0.17160833333333333,
+        "mean_zone_parity": 0.3354875,
+        "mean_industry_coverage": 0.6845208333333334,
+        "mean_affinity_balance": 0.3731333333333333,
+        "mean_centro_vs_barrio": 2.4411125,
+        "mean_overall_balance": 0.5628916666666667
+      },
+      "3": {
+        "mean_slot_cv": 0.17433333333333334,
+        "mean_zone_parity": 0.322175,
+        "mean_industry_coverage": 0.7737958333333333,
+        "mean_affinity_balance": 0.3941666666666666,
+        "mean_centro_vs_barrio": 2.4267833333333333,
+        "mean_overall_balance": 0.5766541666666667
+      },
+      "4": {
+        "mean_slot_cv": 0.20072083333333332,
+        "mean_zone_parity": 0.41678750000000003,
+        "mean_industry_coverage": 0.7916458333333334,
+        "mean_affinity_balance": 0.38595416666666665,
+        "mean_centro_vs_barrio": 2.353683333333333,
+        "mean_overall_balance": 0.5514416666666667
+      }
+    },
+    "grand_mean": {
+      "mean_slot_cv": 0.18222083333333333,
+      "mean_zone_parity": 0.35814999999999997,
+      "mean_industry_coverage": 0.7499875,
+      "mean_affinity_balance": 0.3844180555555556,
+      "mean_centro_vs_barrio": 2.4071930555555556,
+      "mean_overall_balance": 0.5636625
+    },
+    "graph_by_player_count": {
+      "2": {
+        "slot_degree_mean": 3.25,
+        "slot_distance_to_plaza_mean": 1.125,
+        "slot_betweenness_top_share": 0.146607,
+        "frame_betweenness_gap": 0.166667,
+        "frame_closeness_std": 0.125,
+        "overcentralized_frame": "Barrio Comercial",
+        "component_count": 1
+      },
+      "3": {
+        "slot_degree_mean": 3.2,
+        "slot_distance_to_plaza_mean": 1.2,
+        "slot_betweenness_top_share": 0.148609,
+        "frame_betweenness_gap": 0.666667,
+        "frame_closeness_std": 0.133333,
+        "overcentralized_frame": "Plaza Central",
+        "component_count": 1
+      },
+      "4": {
+        "slot_degree_mean": 3.333333,
+        "slot_distance_to_plaza_mean": 1.416667,
+        "slot_betweenness_top_share": 0.111663,
+        "frame_betweenness_gap": 0.35,
+        "frame_closeness_std": 0.075716,
+        "overcentralized_frame": "Plaza Central",
+        "component_count": 1
+      }
+    },
+    "graph_grand_mean": {
+      "slot_degree_mean": 3.261111,
+      "slot_distance_to_plaza_mean": 1.2472223333333332,
+      "slot_betweenness_top_share": 0.13562633333333332,
+      "frame_betweenness_gap": 0.3944446666666666,
+      "frame_closeness_std": 0.11134966666666668,
+      "component_count": 1.0,
+      "most_common_overcentralized_frame": "Plaza Central"
+    }
+  },
+  "optimized": {
+    "by_player_count": {
+      "2": {
+        "mean_slot_cv": 0.16590833333333332,
+        "mean_zone_parity": 0.2985875,
+        "mean_industry_coverage": 0.7202291666666666,
+        "mean_affinity_balance": 0.35363750000000005,
+        "mean_centro_vs_barrio": 2.447995833333333,
+        "mean_overall_balance": 0.5852041666666666
+      },
+      "3": {
+        "mean_slot_cv": 0.169075,
+        "mean_zone_parity": 0.29049166666666665,
+        "mean_industry_coverage": 0.7380875000000001,
+        "mean_affinity_balance": 0.40375,
+        "mean_centro_vs_barrio": 2.4363958333333335,
+        "mean_overall_balance": 0.5761708333333334
+      },
+      "4": {
+        "mean_slot_cv": 0.203775,
+        "mean_zone_parity": 0.4300083333333333,
+        "mean_industry_coverage": 0.80355,
+        "mean_affinity_balance": 0.4089541666666667,
+        "mean_centro_vs_barrio": 2.3387291666666665,
+        "mean_overall_balance": 0.5450333333333334
+      }
+    },
+    "grand_mean": {
+      "mean_slot_cv": 0.1795861111111111,
+      "mean_zone_parity": 0.3396958333333333,
+      "mean_industry_coverage": 0.7539555555555556,
+      "mean_affinity_balance": 0.3887805555555556,
+      "mean_centro_vs_barrio": 2.407706944444444,
+      "mean_overall_balance": 0.5688027777777778
+    },
+    "graph_by_player_count": {
+      "2": {
+        "slot_degree_mean": 3.25,
+        "slot_distance_to_plaza_mean": 1.125,
+        "slot_betweenness_top_share": 0.146607,
+        "frame_betweenness_gap": 0.166667,
+        "frame_closeness_std": 0.125,
+        "overcentralized_frame": "Barrio Comercial",
+        "component_count": 1
+      },
+      "3": {
+        "slot_degree_mean": 3.2,
+        "slot_distance_to_plaza_mean": 1.2,
+        "slot_betweenness_top_share": 0.148609,
+        "frame_betweenness_gap": 0.666667,
+        "frame_closeness_std": 0.133333,
+        "overcentralized_frame": "Plaza Central",
+        "component_count": 1
+      },
+      "4": {
+        "slot_degree_mean": 3.333333,
+        "slot_distance_to_plaza_mean": 1.416667,
+        "slot_betweenness_top_share": 0.111663,
+        "frame_betweenness_gap": 0.35,
+        "frame_closeness_std": 0.075716,
+        "overcentralized_frame": "Plaza Central",
+        "component_count": 1
+      }
+    },
+    "graph_grand_mean": {
+      "slot_degree_mean": 3.261111,
+      "slot_distance_to_plaza_mean": 1.2472223333333332,
+      "slot_betweenness_top_share": 0.13562633333333332,
+      "frame_betweenness_gap": 0.3944446666666666,
+      "frame_closeness_std": 0.11134966666666668,
+      "component_count": 1.0,
+      "most_common_overcentralized_frame": "Plaza Central"
+    }
+  },
+  "final_verification": {
+    "by_player_count": {
+      "2": {
+        "mean_slot_cv": 0.17306875,
+        "mean_zone_parity": 0.3227125,
+        "mean_industry_coverage": 0.7172541666666667,
+        "mean_affinity_balance": 0.36787083333333337,
+        "mean_centro_vs_barrio": 2.4220104166666667,
+        "mean_overall_balance": 0.5737458333333333
+      },
+      "3": {
+        "mean_slot_cv": 0.16794166666666666,
+        "mean_zone_parity": 0.2919333333333333,
+        "mean_industry_coverage": 0.7559375,
+        "mean_affinity_balance": 0.4015104166666667,
+        "mean_centro_vs_barrio": 2.445958333333333,
+        "mean_overall_balance": 0.5797875
+      },
+      "4": {
+        "mean_slot_cv": 0.20062708333333334,
+        "mean_zone_parity": 0.40662916666666665,
+        "mean_industry_coverage": 0.7886666666666667,
+        "mean_affinity_balance": 0.40030208333333334,
+        "mean_centro_vs_barrio": 2.330075,
+        "mean_overall_balance": 0.5528125
+      }
+    },
+    "grand_mean": {
+      "mean_slot_cv": 0.18054583333333332,
+      "mean_zone_parity": 0.340425,
+      "mean_industry_coverage": 0.7539527777777777,
+      "mean_affinity_balance": 0.3898944444444445,
+      "mean_centro_vs_barrio": 2.3993479166666667,
+      "mean_overall_balance": 0.5687819444444444
+    },
+    "graph_by_player_count": {
+      "2": {
+        "slot_degree_mean": 3.25,
+        "slot_distance_to_plaza_mean": 1.125,
+        "slot_betweenness_top_share": 0.146607,
+        "frame_betweenness_gap": 0.166667,
+        "frame_closeness_std": 0.125,
+        "overcentralized_frame": "Barrio Comercial",
+        "component_count": 1
+      },
+      "3": {
+        "slot_degree_mean": 3.2,
+        "slot_distance_to_plaza_mean": 1.2,
+        "slot_betweenness_top_share": 0.148609,
+        "frame_betweenness_gap": 0.666667,
+        "frame_closeness_std": 0.133333,
+        "overcentralized_frame": "Plaza Central",
+        "component_count": 1
+      },
+      "4": {
+        "slot_degree_mean": 3.333333,
+        "slot_distance_to_plaza_mean": 1.416667,
+        "slot_betweenness_top_share": 0.111663,
+        "frame_betweenness_gap": 0.35,
+        "frame_closeness_std": 0.075716,
+        "overcentralized_frame": "Plaza Central",
+        "component_count": 1
+      }
+    },
+    "graph_grand_mean": {
+      "slot_degree_mean": 3.261111,
+      "slot_distance_to_plaza_mean": 1.2472223333333332,
+      "slot_betweenness_top_share": 0.13562633333333332,
+      "frame_betweenness_gap": 0.3944446666666666,
+      "frame_closeness_std": 0.11134966666666668,
+      "component_count": 1.0,
+      "most_common_overcentralized_frame": "Plaza Central"
+    }
+  },
+  "baseline_graph": {
+    "slot_degree_mean": 3.261111,
+    "slot_distance_to_plaza_mean": 1.2472223333333332,
+    "slot_betweenness_top_share": 0.13562633333333332,
+    "frame_betweenness_gap": 0.3944446666666666,
+    "frame_closeness_std": 0.11134966666666668,
+    "component_count": 1.0,
+    "most_common_overcentralized_frame": "Plaza Central"
+  },
+  "optimized_graph": {
+    "slot_degree_mean": 3.261111,
+    "slot_distance_to_plaza_mean": 1.2472223333333332,
+    "slot_betweenness_top_share": 0.13562633333333332,
+    "frame_betweenness_gap": 0.3944446666666666,
+    "frame_closeness_std": 0.11134966666666668,
+    "component_count": 1.0,
+    "most_common_overcentralized_frame": "Plaza Central"
+  },
+  "final_graph": {
+    "slot_degree_mean": 3.261111,
+    "slot_distance_to_plaza_mean": 1.2472223333333332,
+    "slot_betweenness_top_share": 0.13562633333333332,
+    "frame_betweenness_gap": 0.3944446666666666,
+    "frame_closeness_std": 0.11134966666666668,
+    "component_count": 1.0,
+    "most_common_overcentralized_frame": "Plaza Central"
+  },
+  "notes": [
+    "Graph metrics are structural diagnostics for the board topology.",
+    "Monte Carlo and the fixed evaluator remain the balance judge.",
+    "Graph disparities can inform ranking and investigation but do not directly encode win rate."
+  ],
+  "baseline_dynamic": {
+    "balance_score": 0.2284,
+    "max_abs_deviation": 0.3333,
+    "zone_gap": 0.3067,
+    "strongest_zone": "Darsena Sur",
+    "strongest_zone_win_rate": 0.64,
+    "weakest_zone": "Barrio Comercial",
+    "weakest_zone_win_rate": 0.3333,
+    "top_slot_share": 0.1842,
+    "weak_zone_industries": [
+      "Service",
+      "Food",
+      "Tech"
+    ],
+    "board_telemetry": {
+      "win_rate_by_starting_zone": [
+        {
+          "starting_zone": "Darsena Sur",
+          "games": 25,
+          "wins": 16,
+          "win_rate": 0.64
+        },
+        {
+          "starting_zone": "Ribera Noroeste",
+          "games": 25,
+          "wins": 14,
+          "win_rate": 0.56
+        },
+        {
+          "starting_zone": "Plaza Central",
+          "games": 21,
+          "wins": 8,
+          "win_rate": 0.381
+        },
+        {
+          "starting_zone": "Barrio Comercial",
+          "games": 21,
+          "wins": 7,
+          "win_rate": 0.3333
+        }
+      ],
+      "slot_usage": [
+        {
+          "slot_id": "city:8",
+          "times_used": 21
+        },
+        {
+          "slot_id": "city:12",
+          "times_used": 16
+        },
+        {
+          "slot_id": "city:2",
+          "times_used": 12
+        },
+        {
+          "slot_id": "city:3",
+          "times_used": 11
+        },
+        {
+          "slot_id": "city:4",
+          "times_used": 10
+        },
+        {
+          "slot_id": "city:6",
+          "times_used": 9
+        },
+        {
+          "slot_id": "city:10",
+          "times_used": 9
+        },
+        {
+          "slot_id": "city:11",
+          "times_used": 6
+        },
+        {
+          "slot_id": "city:1",
+          "times_used": 6
+        },
+        {
+          "slot_id": "city:5",
+          "times_used": 4
+        },
+        {
+          "slot_id": "city:15",
+          "times_used": 3
+        },
+        {
+          "slot_id": "city:0",
+          "times_used": 3
+        },
+        {
+          "slot_id": "city:7",
+          "times_used": 2
+        },
+        {
+          "slot_id": "city:14",
+          "times_used": 1
+        },
+        {
+          "slot_id": "city:9",
+          "times_used": 1
+        }
+      ],
+      "frame_usage": [
+        {
+          "frame_name": "Plaza Central",
+          "times_used": 32
+        },
+        {
+          "frame_name": "Darsena Sur",
+          "times_used": 28
+        },
+        {
+          "frame_name": "Ribera Noroeste",
+          "times_used": 28
+        },
+        {
+          "frame_name": "Barrio Comercial",
+          "times_used": 26
+        }
+      ],
+      "industry_zone_matrix": [
+        {
+          "industry": "Food",
+          "starting_zone": "Barrio Comercial",
+          "count": 5
+        },
+        {
+          "industry": "Food",
+          "starting_zone": "Darsena Sur",
+          "count": 9
+        },
+        {
+          "industry": "Food",
+          "starting_zone": "Plaza Central",
+          "count": 9
+        },
+        {
+          "industry": "Food",
+          "starting_zone": "Ribera Noroeste",
+          "count": 12
+        },
+        {
+          "industry": "Professional",
+          "starting_zone": "Barrio Comercial",
+          "count": 4
+        },
+        {
+          "industry": "Professional",
+          "starting_zone": "Darsena Sur",
+          "count": 2
+        },
+        {
+          "industry": "Professional",
+          "starting_zone": "Plaza Central",
+          "count": 8
+        },
+        {
+          "industry": "Professional",
+          "starting_zone": "Ribera Noroeste",
+          "count": 6
+        },
+        {
+          "industry": "Real Estate",
+          "starting_zone": "Barrio Comercial",
+          "count": 2
+        },
+        {
+          "industry": "Real Estate",
+          "starting_zone": "Darsena Sur",
+          "count": 1
+        },
+        {
+          "industry": "Real Estate",
+          "starting_zone": "Plaza Central",
+          "count": 5
+        },
+        {
+          "industry": "Real Estate",
+          "starting_zone": "Ribera Noroeste",
+          "count": 4
+        },
+        {
+          "industry": "Retail",
+          "starting_zone": "Barrio Comercial",
+          "count": 4
+        },
+        {
+          "industry": "Retail",
+          "starting_zone": "Darsena Sur",
+          "count": 6
+        },
+        {
+          "industry": "Retail",
+          "starting_zone": "Plaza Central",
+          "count": 4
+        },
+        {
+          "industry": "Retail",
+          "starting_zone": "Ribera Noroeste",
+          "count": 8
+        },
+        {
+          "industry": "Service",
+          "starting_zone": "Barrio Comercial",
+          "count": 12
+        },
+        {
+          "industry": "Service",
+          "starting_zone": "Darsena Sur",
+          "count": 12
+        },
+        {
+          "industry": "Service",
+          "starting_zone": "Plaza Central",
+          "count": 12
+        },
+        {
+          "industry": "Service",
+          "starting_zone": "Ribera Noroeste",
+          "count": 18
+        },
+        {
+          "industry": "Tech",
+          "starting_zone": "Barrio Comercial",
+          "count": 5
+        },
+        {
+          "industry": "Tech",
+          "starting_zone": "Darsena Sur",
+          "count": 5
+        },
+        {
+          "industry": "Tech",
+          "starting_zone": "Plaza Central",
+          "count": 3
+        },
+        {
+          "industry": "Tech",
+          "starting_zone": "Ribera Noroeste",
+          "count": 4
+        },
+        {
+          "industry": "Trades",
+          "starting_zone": "Barrio Comercial",
+          "count": 5
+        },
+        {
+          "industry": "Trades",
+          "starting_zone": "Darsena Sur",
+          "count": 9
+        },
+        {
+          "industry": "Trades",
+          "starting_zone": "Plaza Central",
+          "count": 4
+        },
+        {
+          "industry": "Trades",
+          "starting_zone": "Ribera Noroeste",
+          "count": 14
+        }
+      ],
+      "summary": [
+        {
+          "avg_blocked_city_launches": 0.0,
+          "avg_city_launches": 0.2839,
+          "avg_barrio_launches": 0.4974,
+          "avg_slot_bonus_triggers": 0.2969,
+          "avg_district_affinity_triggers": 0.224
+        }
+      ]
+    }
+  },
+  "optimized_dynamic": {
+    "balance_score": 0.2116,
+    "max_abs_deviation": 0.4167,
+    "zone_gap": 0.2374,
+    "strongest_zone": "Darsena Sur",
+    "strongest_zone_win_rate": 0.6818,
+    "weakest_zone": "Plaza Central",
+    "weakest_zone_win_rate": 0.4444,
+    "top_slot_share": 0.1471,
+    "weak_zone_industries": [
+      "Service",
+      "Professional",
+      "Tech"
+    ],
+    "board_telemetry": {
+      "win_rate_by_starting_zone": [
+        {
+          "starting_zone": "Darsena Sur",
+          "games": 22,
+          "wins": 15,
+          "win_rate": 0.6818
+        },
+        {
+          "starting_zone": "Barrio Comercial",
+          "games": 27,
+          "wins": 13,
+          "win_rate": 0.4815
+        },
+        {
+          "starting_zone": "Ribera Noroeste",
+          "games": 19,
+          "wins": 9,
+          "win_rate": 0.4737
+        },
+        {
+          "starting_zone": "Plaza Central",
+          "games": 27,
+          "wins": 12,
+          "win_rate": 0.4444
+        }
+      ],
+      "slot_usage": [
+        {
+          "slot_id": "city:8",
+          "times_used": 20
+        },
+        {
+          "slot_id": "city:12",
+          "times_used": 16
+        },
+        {
+          "slot_id": "city:2",
+          "times_used": 15
+        },
+        {
+          "slot_id": "city:4",
+          "times_used": 14
+        },
+        {
+          "slot_id": "city:6",
+          "times_used": 13
+        },
+        {
+          "slot_id": "city:1",
+          "times_used": 10
+        },
+        {
+          "slot_id": "city:10",
+          "times_used": 10
+        },
+        {
+          "slot_id": "city:3",
+          "times_used": 8
+        },
+        {
+          "slot_id": "city:0",
+          "times_used": 8
+        },
+        {
+          "slot_id": "city:5",
+          "times_used": 5
+        },
+        {
+          "slot_id": "city:9",
+          "times_used": 4
+        },
+        {
+          "slot_id": "city:14",
+          "times_used": 4
+        },
+        {
+          "slot_id": "city:11",
+          "times_used": 3
+        },
+        {
+          "slot_id": "city:7",
+          "times_used": 3
+        },
+        {
+          "slot_id": "city:15",
+          "times_used": 2
+        },
+        {
+          "slot_id": "city:13",
+          "times_used": 1
+        }
+      ],
+      "frame_usage": [
+        {
+          "frame_name": "Plaza Central",
+          "times_used": 41
+        },
+        {
+          "frame_name": "Barrio Comercial",
+          "times_used": 38
+        },
+        {
+          "frame_name": "Darsena Sur",
+          "times_used": 31
+        },
+        {
+          "frame_name": "Ribera Noroeste",
+          "times_used": 26
+        }
+      ],
+      "industry_zone_matrix": [
+        {
+          "industry": "Food",
+          "starting_zone": "Barrio Comercial",
+          "count": 7
+        },
+        {
+          "industry": "Food",
+          "starting_zone": "Darsena Sur",
+          "count": 10
+        },
+        {
+          "industry": "Food",
+          "starting_zone": "Plaza Central",
+          "count": 6
+        },
+        {
+          "industry": "Food",
+          "starting_zone": "Ribera Noroeste",
+          "count": 9
+        },
+        {
+          "industry": "Professional",
+          "starting_zone": "Barrio Comercial",
+          "count": 1
+        },
+        {
+          "industry": "Professional",
+          "starting_zone": "Darsena Sur",
+          "count": 6
+        },
+        {
+          "industry": "Professional",
+          "starting_zone": "Plaza Central",
+          "count": 10
+        },
+        {
+          "industry": "Professional",
+          "starting_zone": "Ribera Noroeste",
+          "count": 4
+        },
+        {
+          "industry": "Real Estate",
+          "starting_zone": "Barrio Comercial",
+          "count": 2
+        },
+        {
+          "industry": "Real Estate",
+          "starting_zone": "Plaza Central",
+          "count": 7
+        },
+        {
+          "industry": "Real Estate",
+          "starting_zone": "Ribera Noroeste",
+          "count": 5
+        },
+        {
+          "industry": "Retail",
+          "starting_zone": "Barrio Comercial",
+          "count": 14
+        },
+        {
+          "industry": "Retail",
+          "starting_zone": "Darsena Sur",
+          "count": 6
+        },
+        {
+          "industry": "Retail",
+          "starting_zone": "Plaza Central",
+          "count": 6
+        },
+        {
+          "industry": "Retail",
+          "starting_zone": "Ribera Noroeste",
+          "count": 9
+        },
+        {
+          "industry": "Service",
+          "starting_zone": "Barrio Comercial",
+          "count": 13
+        },
+        {
+          "industry": "Service",
+          "starting_zone": "Darsena Sur",
+          "count": 9
+        },
+        {
+          "industry": "Service",
+          "starting_zone": "Plaza Central",
+          "count": 17
+        },
+        {
+          "industry": "Service",
+          "starting_zone": "Ribera Noroeste",
+          "count": 6
+        },
+        {
+          "industry": "Tech",
+          "starting_zone": "Barrio Comercial",
+          "count": 6
+        },
+        {
+          "industry": "Tech",
+          "starting_zone": "Darsena Sur",
+          "count": 6
+        },
+        {
+          "industry": "Tech",
+          "starting_zone": "Plaza Central",
+          "count": 10
+        },
+        {
+          "industry": "Tech",
+          "starting_zone": "Ribera Noroeste",
+          "count": 9
+        },
+        {
+          "industry": "Trades",
+          "starting_zone": "Barrio Comercial",
+          "count": 12
+        },
+        {
+          "industry": "Trades",
+          "starting_zone": "Darsena Sur",
+          "count": 15
+        },
+        {
+          "industry": "Trades",
+          "starting_zone": "Plaza Central",
+          "count": 10
+        },
+        {
+          "industry": "Trades",
+          "starting_zone": "Ribera Noroeste",
+          "count": 9
+        }
+      ],
+      "summary": [
+        {
+          "avg_blocked_city_launches": 0.0026,
+          "avg_city_launches": 0.3255,
+          "avg_barrio_launches": 0.4453,
+          "avg_slot_bonus_triggers": 0.3516,
+          "avg_district_affinity_triggers": 0.2318
+        }
+      ]
+    }
+  },
+  "final_dynamic": {
+    "balance_score": 0.1793,
+    "max_abs_deviation": 0.25,
+    "zone_gap": 0.1484,
+    "strongest_zone": "Barrio Comercial",
+    "strongest_zone_win_rate": 0.6,
+    "weakest_zone": "Plaza Central",
+    "weakest_zone_win_rate": 0.4516,
+    "top_slot_share": 0.2121,
+    "weak_zone_industries": [
+      "Tech",
+      "Real Estate",
+      "Trades"
+    ],
+    "board_telemetry": {
+      "win_rate_by_starting_zone": [
+        {
+          "starting_zone": "Barrio Comercial",
+          "games": 20,
+          "wins": 12,
+          "win_rate": 0.6
+        },
+        {
+          "starting_zone": "Ribera Noroeste",
+          "games": 21,
+          "wins": 12,
+          "win_rate": 0.5714
+        },
+        {
+          "starting_zone": "Darsena Sur",
+          "games": 27,
+          "wins": 13,
+          "win_rate": 0.4815
+        },
+        {
+          "starting_zone": "Plaza Central",
+          "games": 31,
+          "wins": 14,
+          "win_rate": 0.4516
+        }
+      ],
+      "slot_usage": [
+        {
+          "slot_id": "city:8",
+          "times_used": 28
+        },
+        {
+          "slot_id": "city:2",
+          "times_used": 15
+        },
+        {
+          "slot_id": "city:3",
+          "times_used": 14
+        },
+        {
+          "slot_id": "city:4",
+          "times_used": 13
+        },
+        {
+          "slot_id": "city:12",
+          "times_used": 12
+        },
+        {
+          "slot_id": "city:10",
+          "times_used": 11
+        },
+        {
+          "slot_id": "city:1",
+          "times_used": 10
+        },
+        {
+          "slot_id": "city:0",
+          "times_used": 9
+        },
+        {
+          "slot_id": "city:6",
+          "times_used": 6
+        },
+        {
+          "slot_id": "city:9",
+          "times_used": 6
+        },
+        {
+          "slot_id": "city:14",
+          "times_used": 3
+        },
+        {
+          "slot_id": "city:11",
+          "times_used": 2
+        },
+        {
+          "slot_id": "city:7",
+          "times_used": 2
+        },
+        {
+          "slot_id": "city:15",
+          "times_used": 1
+        }
+      ],
+      "frame_usage": [
+        {
+          "frame_name": "Plaza Central",
+          "times_used": 48
+        },
+        {
+          "frame_name": "Darsena Sur",
+          "times_used": 32
+        },
+        {
+          "frame_name": "Ribera Noroeste",
+          "times_used": 30
+        },
+        {
+          "frame_name": "Barrio Comercial",
+          "times_used": 22
+        }
+      ],
+      "industry_zone_matrix": [
+        {
+          "industry": "Food",
+          "starting_zone": "Barrio Comercial",
+          "count": 8
+        },
+        {
+          "industry": "Food",
+          "starting_zone": "Darsena Sur",
+          "count": 9
+        },
+        {
+          "industry": "Food",
+          "starting_zone": "Plaza Central",
+          "count": 10
+        },
+        {
+          "industry": "Food",
+          "starting_zone": "Ribera Noroeste",
+          "count": 8
+        },
+        {
+          "industry": "Professional",
+          "starting_zone": "Barrio Comercial",
+          "count": 2
+        },
+        {
+          "industry": "Professional",
+          "starting_zone": "Darsena Sur",
+          "count": 6
+        },
+        {
+          "industry": "Professional",
+          "starting_zone": "Plaza Central",
+          "count": 7
+        },
+        {
+          "industry": "Professional",
+          "starting_zone": "Ribera Noroeste",
+          "count": 5
+        },
+        {
+          "industry": "Real Estate",
+          "starting_zone": "Barrio Comercial",
+          "count": 3
+        },
+        {
+          "industry": "Real Estate",
+          "starting_zone": "Darsena Sur",
+          "count": 4
+        },
+        {
+          "industry": "Real Estate",
+          "starting_zone": "Plaza Central",
+          "count": 12
+        },
+        {
+          "industry": "Real Estate",
+          "starting_zone": "Ribera Noroeste",
+          "count": 3
+        },
+        {
+          "industry": "Retail",
+          "starting_zone": "Barrio Comercial",
+          "count": 5
+        },
+        {
+          "industry": "Retail",
+          "starting_zone": "Darsena Sur",
+          "count": 8
+        },
+        {
+          "industry": "Retail",
+          "starting_zone": "Plaza Central",
+          "count": 7
+        },
+        {
+          "industry": "Retail",
+          "starting_zone": "Ribera Noroeste",
+          "count": 8
+        },
+        {
+          "industry": "Service",
+          "starting_zone": "Barrio Comercial",
+          "count": 12
+        },
+        {
+          "industry": "Service",
+          "starting_zone": "Darsena Sur",
+          "count": 15
+        },
+        {
+          "industry": "Service",
+          "starting_zone": "Plaza Central",
+          "count": 10
+        },
+        {
+          "industry": "Service",
+          "starting_zone": "Ribera Noroeste",
+          "count": 16
+        },
+        {
+          "industry": "Tech",
+          "starting_zone": "Barrio Comercial",
+          "count": 7
+        },
+        {
+          "industry": "Tech",
+          "starting_zone": "Darsena Sur",
+          "count": 8
+        },
+        {
+          "industry": "Tech",
+          "starting_zone": "Plaza Central",
+          "count": 14
+        },
+        {
+          "industry": "Tech",
+          "starting_zone": "Ribera Noroeste",
+          "count": 8
+        },
+        {
+          "industry": "Trades",
+          "starting_zone": "Barrio Comercial",
+          "count": 8
+        },
+        {
+          "industry": "Trades",
+          "starting_zone": "Darsena Sur",
+          "count": 15
+        },
+        {
+          "industry": "Trades",
+          "starting_zone": "Plaza Central",
+          "count": 11
+        },
+        {
+          "industry": "Trades",
+          "starting_zone": "Ribera Noroeste",
+          "count": 6
+        }
+      ],
+      "summary": [
+        {
+          "avg_blocked_city_launches": 0.0026,
+          "avg_city_launches": 0.3281,
+          "avg_barrio_launches": 0.4401,
+          "avg_slot_bonus_triggers": 0.3438,
+          "avg_district_affinity_triggers": 0.237
+        }
+      ]
+    }
+  },
+  "accepted_changes": [
+    {
+      "description": "Adjust spatial feature plaza_adjacent 0.35 -> 0.30",
+      "field_path": "SPATIAL_FEATURE_VALUES.plaza_adjacent",
+      "old_value": 0.35,
+      "new_value": 0.3,
+      "change_type": "spatial",
+      "before_overall_balance": 0.5636625,
+      "estimated_after_overall_balance": 0.5731033333333334,
+      "confirmed_after_overall_balance": 0.5688027777777778,
+      "estimated_improvement": 0.0094,
+      "confirmed_improvement": 0.0051,
+      "estimated_zone_gap": 0.394,
+      "confirmed_zone_gap": 0.2374,
+      "estimated_weak_zone": "Ribera Noroeste",
+      "confirmed_weak_zone": "Plaza Central",
+      "estimated_weak_zone_win_rate": 0.2727,
+      "confirmed_weak_zone_win_rate": 0.4444,
+      "estimated_graph_disparity": 0.3944446666666666,
+      "confirmed_graph_disparity": 0.3944446666666666,
+      "estimated_overcentralized_frame": "Plaza Central",
+      "confirmed_overcentralized_frame": "Plaza Central",
+      "confirmation_passed": true,
+      "dynamic_gate_passed": true
+    }
+  ],
+  "optimized_runtime": {
+    "traffic_bonus_ir": 1,
+    "prestige_bonus_marca": 1,
+    "discount_bonus_k": 1,
+    "spatial_feature_values": {
+      "riverfront": 0.35,
+      "bridge_adjacent": 0.2,
+      "plaza_adjacent": 0.3,
+      "avenue_access": 0.15,
+      "market_street": 0.25,
+      "outer_ring": -0.15,
+      "dock_access": 0.15
+    },
+    "row_modifiers": {
+      "0": 0.1,
+      "1": -0.1
+    },
+    "frame_affinity_preference": {
+      "Ribera Noroeste": [
+        "Food",
+        "Real Estate"
+      ],
+      "Ribera Noreste": [
+        "Service",
+        "Real Estate"
+      ],
+      "Barrio Comercial": [
+        "Retail",
+        "Food"
+      ],
+      "Darsena Sur": [
+        "Trades",
+        "Service"
+      ],
+      "Periferia": [
+        "Service",
+        "Trades"
+      ]
+    },
+    "frame_compatibility_bonus": 0.15,
+    "location_fee": 2.75,
+    "barrio_slots": 6,
+    "barrio_open_slots": 4,
+    "barrio_unlock_slots": 2,
+    "lots_per_frame": 4,
+    "frame_cols": 2,
+    "frame_rows": 2,
+    "slot_size_by_tier": {
+      "Starter": 1,
+      "Established": 1,
+      "Premium": 2,
+      "Empire": 2
+    },
+    "plaza_variants": [
+      {
+        "name": "Plaza Central",
+        "affinities": [
+          "Professional",
+          "Real Estate"
+        ],
+        "bonuses": [
+          {
+            "slot_index": 0,
+            "bonus_type": "Prestigio"
+          },
+          {
+            "slot_index": 1,
+            "bonus_type": "Prestigio"
+          },
+          {
+            "slot_index": 2,
+            "bonus_type": "Trafico"
+          },
+          {
+            "slot_index": 3,
+            "bonus_type": "Trafico"
+          }
+        ]
+      },
+      {
+        "name": "Plaza Central",
+        "affinities": [
+          "Professional",
+          "Real Estate"
+        ],
+        "bonuses": [
+          {
+            "slot_index": 0,
+            "bonus_type": "Trafico"
+          },
+          {
+            "slot_index": 1,
+            "bonus_type": "Trafico"
+          },
+          {
+            "slot_index": 2,
+            "bonus_type": "Descuento"
+          },
+          {
+            "slot_index": 3,
+            "bonus_type": "Trafico"
+          }
+        ]
+      },
+      {
+        "name": "Plaza Central",
+        "affinities": [
+          "Professional",
+          "Real Estate"
+        ],
+        "bonuses": [
+          {
+            "slot_index": 0,
+            "bonus_type": "Prestigio"
+          },
+          {
+            "slot_index": 1,
+            "bonus_type": "Trafico"
+          },
+          {
+            "slot_index": 2,
+            "bonus_type": "Trafico"
+          },
+          {
+            "slot_index": 3,
+            "bonus_type": "Descuento"
+          }
+        ]
+      }
+    ],
+    "plaza_frame": {
+      "name": "Plaza Central",
+      "features": [
+        "plaza_adjacent",
+        "avenue_access"
+      ]
+    },
+    "city_frames": {
+      "4": [
+        {
+          "name": "Ribera Noroeste",
+          "features": [
+            "riverfront",
+            "bridge_adjacent"
+          ]
+        },
+        {
+          "name": "Ribera Noreste",
+          "features": [
+            "riverfront",
+            "bridge_adjacent"
+          ]
+        },
+        {
+          "name": "Barrio Comercial",
+          "features": [
+            "market_street",
+            "avenue_access"
+          ]
+        },
+        {
+          "name": "Darsena Sur",
+          "features": [
+            "dock_access",
+            "riverfront"
+          ]
+        },
+        {
+          "name": "Periferia",
+          "features": [
+            "outer_ring"
+          ]
+        }
+      ],
+      "3": [
+        {
+          "name": "Ribera Noroeste",
+          "features": [
+            "riverfront",
+            "bridge_adjacent"
+          ]
+        },
+        {
+          "name": "Ribera Noreste",
+          "features": [
+            "riverfront",
+            "bridge_adjacent"
+          ]
+        },
+        {
+          "name": "Barrio Comercial",
+          "features": [
+            "market_street",
+            "avenue_access"
+          ]
+        },
+        {
+          "name": "Darsena Sur",
+          "features": [
+            "dock_access",
+            "riverfront"
+          ]
+        }
+      ],
+      "2": [
+        {
+          "name": "Ribera Noroeste",
+          "features": [
+            "riverfront",
+            "bridge_adjacent"
+          ]
+        },
+        {
+          "name": "Barrio Comercial",
+          "features": [
+            "market_street",
+            "avenue_access"
+          ]
+        },
+        {
+          "name": "Darsena Sur",
+          "features": [
+            "dock_access",
+            "riverfront"
+          ]
+        }
+      ]
+    },
+    "frame_adjacency_by_player_count": {
+      "4": [
+        [
+          "Plaza Central",
+          "Ribera Noroeste"
+        ],
+        [
+          "Plaza Central",
+          "Ribera Noreste"
+        ],
+        [
+          "Plaza Central",
+          "Barrio Comercial"
+        ],
+        [
+          "Plaza Central",
+          "Darsena Sur"
+        ],
+        [
+          "Barrio Comercial",
+          "Ribera Noroeste"
+        ],
+        [
+          "Darsena Sur",
+          "Ribera Noreste"
+        ],
+        [
+          "Barrio Comercial",
+          "Periferia"
+        ],
+        [
+          "Darsena Sur",
+          "Periferia"
+        ]
+      ],
+      "3": [
+        [
+          "Plaza Central",
+          "Ribera Noroeste"
+        ],
+        [
+          "Plaza Central",
+          "Ribera Noreste"
+        ],
+        [
+          "Plaza Central",
+          "Barrio Comercial"
+        ],
+        [
+          "Plaza Central",
+          "Darsena Sur"
+        ],
+        [
+          "Barrio Comercial",
+          "Ribera Noroeste"
+        ],
+        [
+          "Darsena Sur",
+          "Ribera Noreste"
+        ]
+      ],
+      "2": [
+        [
+          "Plaza Central",
+          "Ribera Noroeste"
+        ],
+        [
+          "Plaza Central",
+          "Barrio Comercial"
+        ],
+        [
+          "Plaza Central",
+          "Darsena Sur"
+        ],
+        [
+          "Barrio Comercial",
+          "Ribera Noroeste"
+        ],
+        [
+          "Barrio Comercial",
+          "Darsena Sur"
+        ]
+      ]
+    },
+    "district_tiles": [
+      {
+        "tile_id": 1,
+        "side_a": {
+          "name": "Centro Financiero",
+          "affinities": [
+            "Professional",
+            "Retail"
+          ],
+          "bonuses": [
+            {
+              "slot_index": 0,
+              "bonus_type": "Prestigio"
+            },
+            {
+              "slot_index": 1,
+              "bonus_type": "Trafico"
+            },
+            {
+              "slot_index": 2,
+              "bonus_type": "Descuento"
+            }
+          ]
+        },
+        "side_b": {
+          "name": "Zona Ejecutiva",
+          "affinities": [
+            "Professional",
+            "Real Estate"
+          ],
+          "bonuses": [
+            {
+              "slot_index": 0,
+              "bonus_type": "Prestigio"
+            },
+            {
+              "slot_index": 3,
+              "bonus_type": "Descuento"
+            }
+          ]
+        }
+      },
+      {
+        "tile_id": 2,
+        "side_a": {
+          "name": "Paseo Maritimo",
+          "affinities": [
+            "Food",
+            "Real Estate"
+          ],
+          "bonuses": [
+            {
+              "slot_index": 0,
+              "bonus_type": "Trafico"
+            },
+            {
+              "slot_index": 1,
+              "bonus_type": "Trafico"
+            }
+          ]
+        },
+        "side_b": {
+          "name": "Puerto Deportivo",
+          "affinities": [
+            "Service",
+            "Real Estate"
+          ],
+          "bonuses": [
+            {
+              "slot_index": 0,
+              "bonus_type": "Trafico"
+            },
+            {
+              "slot_index": 3,
+              "bonus_type": "Prestigio"
+            }
+          ]
+        }
+      },
+      {
+        "tile_id": 3,
+        "side_a": {
+          "name": "Calle Comercial",
+          "affinities": [
+            "Retail",
+            "Food"
+          ],
+          "bonuses": [
+            {
+              "slot_index": 0,
+              "bonus_type": "Trafico"
+            },
+            {
+              "slot_index": 1,
+              "bonus_type": "Trafico"
+            },
+            {
+              "slot_index": 2,
+              "bonus_type": "Descuento"
+            }
+          ]
+        },
+        "side_b": {
+          "name": "Plaza del Mercado",
+          "affinities": [
+            "Retail",
+            "Service"
+          ],
+          "bonuses": [
+            {
+              "slot_index": 0,
+              "bonus_type": "Trafico"
+            },
+            {
+              "slot_index": 2,
+              "bonus_type": "Descuento"
+            }
+          ]
+        }
+      },
+      {
+        "tile_id": 4,
+        "side_a": {
+          "name": "Campus Tech",
+          "affinities": [
+            "Real Estate",
+            "Professional"
+          ],
+          "bonuses": [
+            {
+              "slot_index": 0,
+              "bonus_type": "Descuento"
+            },
+            {
+              "slot_index": 1,
+              "bonus_type": "Prestigio"
+            }
+          ]
+        },
+        "side_b": {
+          "name": "Hub de Innovacion",
+          "affinities": [
+            "Food",
+            "Trades"
+          ],
+          "bonuses": [
+            {
+              "slot_index": 0,
+              "bonus_type": "Descuento"
+            },
+            {
+              "slot_index": 1,
+              "bonus_type": "Trafico"
+            }
+          ]
+        }
+      },
+      {
+        "tile_id": 5,
+        "side_a": {
+          "name": "Poligono Industrial",
+          "affinities": [
+            "Trades",
+            "Service"
+          ],
+          "bonuses": [
+            {
+              "slot_index": 0,
+              "bonus_type": "Descuento"
+            },
+            {
+              "slot_index": 2,
+              "bonus_type": "Descuento"
+            }
+          ]
+        },
+        "side_b": {
+          "name": "Centro Logistico",
+          "affinities": [
+            "Trades",
+            "Retail"
+          ],
+          "bonuses": [
+            {
+              "slot_index": 0,
+              "bonus_type": "Trafico"
+            },
+            {
+              "slot_index": 3,
+              "bonus_type": "Descuento"
+            }
+          ]
+        }
+      },
+      {
+        "tile_id": 6,
+        "side_a": {
+          "name": "Barrio Universitario",
+          "affinities": [
+            "Professional",
+            "Service"
+          ],
+          "bonuses": [
+            {
+              "slot_index": 0,
+              "bonus_type": "Trafico"
+            },
+            {
+              "slot_index": 2,
+              "bonus_type": "Prestigio"
+            }
+          ]
+        },
+        "side_b": {
+          "name": "Centro Medico",
+          "affinities": [
+            "Professional",
+            "Food"
+          ],
+          "bonuses": [
+            {
+              "slot_index": 0,
+              "bonus_type": "Trafico"
+            },
+            {
+              "slot_index": 3,
+              "bonus_type": "Descuento"
+            }
+          ]
+        }
+      },
+      {
+        "tile_id": 7,
+        "side_a": {
+          "name": "Zona Residencial",
+          "affinities": [
+            "Service",
+            "Food"
+          ],
+          "bonuses": [
+            {
+              "slot_index": 0,
+              "bonus_type": "Trafico"
+            },
+            {
+              "slot_index": 1,
+              "bonus_type": "Trafico"
+            }
+          ]
+        },
+        "side_b": {
+          "name": "Urbanizacion",
+          "affinities": [
+            "Service",
+            "Trades"
+          ],
+          "bonuses": [
+            {
+              "slot_index": 0,
+              "bonus_type": "Trafico"
+            },
+            {
+              "slot_index": 2,
+              "bonus_type": "Descuento"
+            }
+          ]
+        }
+      },
+      {
+        "tile_id": 8,
+        "side_a": {
+          "name": "Distrito Turistico",
+          "affinities": [
+            "Food",
+            "Retail"
+          ],
+          "bonuses": [
+            {
+              "slot_index": 0,
+              "bonus_type": "Trafico"
+            },
+            {
+              "slot_index": 1,
+              "bonus_type": "Prestigio"
+            }
+          ]
+        },
+        "side_b": {
+          "name": "Barrio Cultural",
+          "affinities": [
+            "Professional",
+            "Real Estate"
+          ],
+          "bonuses": [
+            {
+              "slot_index": 0,
+              "bonus_type": "Prestigio"
+            },
+            {
+              "slot_index": 3,
+              "bonus_type": "Trafico"
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

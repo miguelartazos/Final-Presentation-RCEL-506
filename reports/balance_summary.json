@@ -1,0 +1,422 @@
+{
+  "board": {
+    "baseline": {
+      "mean_slot_cv": 0.18222083333333333,
+      "mean_zone_parity": 0.35814999999999997,
+      "mean_industry_coverage": 0.7499875,
+      "mean_affinity_balance": 0.3844180555555556,
+      "mean_centro_vs_barrio": 2.4071930555555556,
+      "mean_overall_balance": 0.5636625
+    },
+    "final_verification": {
+      "mean_slot_cv": 0.18054583333333332,
+      "mean_zone_parity": 0.340425,
+      "mean_industry_coverage": 0.7539527777777777,
+      "mean_affinity_balance": 0.3898944444444445,
+      "mean_centro_vs_barrio": 2.3993479166666667,
+      "mean_overall_balance": 0.5687819444444444
+    },
+    "graph_metrics": {
+      "baseline": {
+        "slot_degree_mean": 3.261111,
+        "slot_distance_to_plaza_mean": 1.2472223333333332,
+        "slot_betweenness_top_share": 0.13562633333333332,
+        "frame_betweenness_gap": 0.3944446666666666,
+        "frame_closeness_std": 0.11134966666666668,
+        "component_count": 1.0,
+        "most_common_overcentralized_frame": "Plaza Central"
+      },
+      "final_verification": {
+        "slot_degree_mean": 3.261111,
+        "slot_distance_to_plaza_mean": 1.2472223333333332,
+        "slot_betweenness_top_share": 0.13562633333333332,
+        "frame_betweenness_gap": 0.3944446666666666,
+        "frame_closeness_std": 0.11134966666666668,
+        "component_count": 1.0,
+        "most_common_overcentralized_frame": "Plaza Central"
+      },
+      "representative_report": {
+        "graph_report": {
+          "player_count": 4,
+          "city_slot_count": 24,
+          "city_slot_edge_count": 40,
+          "frame_count": 6,
+          "frame_edge_count": 8,
+          "component_count": 1,
+          "plaza_slot_ids": [
+            "Plaza Central::L0",
+            "Plaza Central::L1",
+            "Plaza Central::L2",
+            "Plaza Central::L3"
+          ],
+          "top_bridge_slots": [
+            {
+              "slot_id": "Plaza Central::L3",
+              "frame_name": "Plaza Central",
+              "graph_betweenness": 0.23391906731827677,
+              "graph_closeness": 0.4423076923076923,
+              "graph_distance_to_plaza": 0.0
+            },
+            {
+              "slot_id": "Plaza Central::L2",
+              "frame_name": "Plaza Central",
+              "graph_betweenness": 0.23391906731827675,
+              "graph_closeness": 0.4423076923076923,
+              "graph_distance_to_plaza": 0.0
+            },
+            {
+              "slot_id": "Barrio Comercial::L1",
+              "frame_name": "Barrio Comercial",
+              "graph_betweenness": 0.2290282565480194,
+              "graph_closeness": 0.4423076923076923,
+              "graph_distance_to_plaza": 1.0
+            },
+            {
+              "slot_id": "Darsena Sur::L0",
+              "frame_name": "Darsena Sur",
+              "graph_betweenness": 0.22902825654801937,
+              "graph_closeness": 0.4423076923076923,
+              "graph_distance_to_plaza": 1.0
+            },
+            {
+              "slot_id": "Barrio Comercial::L0",
+              "frame_name": "Barrio Comercial",
+              "graph_betweenness": 0.11825035965352172,
+              "graph_closeness": 0.38333333333333336,
+              "graph_distance_to_plaza": 1.0
+            }
+          ],
+          "top_bridge_frames": [
+            {
+              "frame_name": "Plaza Central",
+              "frame_betweenness": 0.35000000000000003,
+              "frame_closeness": 0.8333333333333334,
+              "frame_distance_to_plaza": 0.0
+            },
+            {
+              "frame_name": "Barrio Comercial",
+              "frame_betweenness": 0.15000000000000002,
+              "frame_closeness": 0.7142857142857143,
+              "frame_distance_to_plaza": 1.0
+            },
+            {
+              "frame_name": "Darsena Sur",
+              "frame_betweenness": 0.15000000000000002,
+              "frame_closeness": 0.7142857142857143,
+              "frame_distance_to_plaza": 1.0
+            },
+            {
+              "frame_name": "Periferia",
+              "frame_betweenness": 0.05,
+              "frame_closeness": 0.625,
+              "frame_distance_to_plaza": 2.0
+            },
+            {
+              "frame_name": "Ribera Noreste",
+              "frame_betweenness": 0.0,
+              "frame_closeness": 0.625,
+              "frame_distance_to_plaza": 1.0
+            }
+          ]
+        },
+        "graph_summary": {
+          "slot_degree_mean": 3.333333,
+          "slot_distance_to_plaza_mean": 1.416667,
+          "slot_betweenness_top_share": 0.111663,
+          "frame_betweenness_gap": 0.35,
+          "frame_closeness_std": 0.075716,
+          "overcentralized_frame": "Plaza Central",
+          "component_count": 1
+        },
+        "representative_player_count": 4
+      }
+    },
+    "accepted_changes": [
+      "Adjust spatial feature plaza_adjacent 0.35 -> 0.30"
+    ],
+    "candidate_dynamic_before": {
+      "zone_gap": 0.3067,
+      "weakest_zone": "Barrio Comercial",
+      "weakest_zone_win_rate": 0.3333
+    },
+    "candidate_dynamic_after": {
+      "zone_gap": 0.1484,
+      "weakest_zone": "Plaza Central",
+      "weakest_zone_win_rate": 0.4516
+    }
+  },
+  "card_recommendations": {
+    "baseline_balance_score": 0.1726,
+    "final_balance_score": 0.1726,
+    "accepted_changes": []
+  },
+  "board_aware_game": {
+    "balance_score": 0.2035,
+    "max_abs_deviation": 0.4167,
+    "top_starting_zones": [
+      {
+        "starting_zone": "Plaza Central",
+        "games": 39,
+        "wins": 22,
+        "win_rate": 0.5641
+      },
+      {
+        "starting_zone": "Ribera Noroeste",
+        "games": 39,
+        "wins": 21,
+        "win_rate": 0.5385
+      },
+      {
+        "starting_zone": "Barrio Comercial",
+        "games": 32,
+        "wins": 12,
+        "win_rate": 0.375
+      },
+      {
+        "starting_zone": "Darsena Sur",
+        "games": 27,
+        "wins": 6,
+        "win_rate": 0.2222
+      }
+    ]
+  },
+  "ml_surrogate": {
+    "model_type": "ridge_regression",
+    "target_column": "win_bias",
+    "baseline_metrics": {
+      "mae": 0.018015,
+      "rmse": 0.034451,
+      "r2": 0.0,
+      "correlation": 0.0
+    },
+    "oof_metrics": {
+      "mae": 0.016338,
+      "rmse": 0.032856,
+      "r2": 0.09045,
+      "correlation": 0.372175
+    },
+    "top_positive_residuals": [
+      {
+        "id": "BUS-TECH-001",
+        "name": "Freelance Developer",
+        "industry": "Tech",
+        "tier": "Starter",
+        "cost": 2.0,
+        "income": 2.0,
+        "valuation_points": 2.0,
+        "effective_roi": 1.75,
+        "usage_rate": 0.1493,
+        "win_deck_rate": 0.2834,
+        "loss_deck_rate": 0.0481,
+        "win_bias": 0.2353,
+        "predicted_win_bias": 0.0323185928,
+        "win_bias_residual": 0.2029814072,
+        "positive_win_bias_residual": 0.2029814072,
+        "negative_win_bias_residual": 0.0,
+        "positive_residual_norm": 1.0,
+        "negative_residual_norm": 0.0,
+        "full_fit_prediction": 0.2074528083,
+        "fold": 0,
+        "outlier_direction": "overperforming"
+      },
+      {
+        "id": "BUS-REALESTATE-006",
+        "name": "Airbnb Property",
+        "industry": "Real Estate",
+        "tier": "Starter",
+        "cost": 5.0,
+        "income": 3.0,
+        "valuation_points": 3.0,
+        "effective_roi": 0.571,
+        "usage_rate": 0.0868,
+        "win_deck_rate": 0.139,
+        "loss_deck_rate": 0.0561,
+        "win_bias": 0.0829,
+        "predicted_win_bias": 0.0244938647,
+        "win_bias_residual": 0.0584061353,
+        "positive_win_bias_residual": 0.0584061353,
+        "negative_win_bias_residual": 0.0,
+        "positive_residual_norm": 0.2877413067,
+        "negative_residual_norm": 0.0,
+        "full_fit_prediction": 0.0462892253,
+        "fold": 1,
+        "outlier_direction": "overperforming"
+      },
+      {
+        "id": "BUS-TRADES-006",
+        "name": "Landscaping",
+        "industry": "Trades",
+        "tier": "Starter",
+        "cost": 4.0,
+        "income": 4.0,
+        "valuation_points": 3.0,
+        "effective_roi": 0.667,
+        "usage_rate": 0.0625,
+        "win_deck_rate": 0.1016,
+        "loss_deck_rate": 0.0348,
+        "win_bias": 0.0668,
+        "predicted_win_bias": 0.0175749687,
+        "win_bias_residual": 0.0492250313,
+        "positive_win_bias_residual": 0.0492250313,
+        "negative_win_bias_residual": 0.0,
+        "positive_residual_norm": 0.2425100505,
+        "negative_residual_norm": 0.0,
+        "full_fit_prediction": 0.0270641805,
+        "fold": 0,
+        "outlier_direction": "overperforming"
+      },
+      {
+        "id": "BUS-SERVICE-006",
+        "name": "AI Agency",
+        "industry": "Service",
+        "tier": "Established",
+        "cost": 8.0,
+        "income": 4.0,
+        "valuation_points": 5.0,
+        "effective_roi": 0.5,
+        "usage_rate": 0.0,
+        "win_deck_rate": 0.0,
+        "loss_deck_rate": 0.0,
+        "win_bias": 0.0,
+        "predicted_win_bias": -0.0295343622,
+        "win_bias_residual": 0.0295343622,
+        "positive_win_bias_residual": 0.0295343622,
+        "negative_win_bias_residual": 0.0,
+        "positive_residual_norm": 0.1455027955,
+        "negative_residual_norm": 0.0,
+        "full_fit_prediction": -0.0134769373,
+        "fold": 4,
+        "outlier_direction": "overperforming"
+      },
+      {
+        "id": "BUS-FOOD-002",
+        "name": "Food Truck",
+        "industry": "Food",
+        "tier": "Starter",
+        "cost": 4.0,
+        "income": 3.0,
+        "valuation_points": 2.0,
+        "effective_roi": 0.667,
+        "usage_rate": 0.0637,
+        "win_deck_rate": 0.1043,
+        "loss_deck_rate": 0.0401,
+        "win_bias": 0.0642,
+        "predicted_win_bias": 0.043210061,
+        "win_bias_residual": 0.020989939,
+        "positive_win_bias_residual": 0.020989939,
+        "negative_win_bias_residual": 0.0,
+        "positive_residual_norm": 0.1034081855,
+        "negative_residual_norm": 0.0,
+        "full_fit_prediction": 0.0530403715,
+        "fold": 3,
+        "outlier_direction": "overperforming"
+      }
+    ]
+  },
+  "graph_metrics": {
+    "board_graph_report": {
+      "graph_report": {
+        "player_count": 4,
+        "city_slot_count": 24,
+        "city_slot_edge_count": 40,
+        "frame_count": 6,
+        "frame_edge_count": 8,
+        "component_count": 1,
+        "plaza_slot_ids": [
+          "Plaza Central::L0",
+          "Plaza Central::L1",
+          "Plaza Central::L2",
+          "Plaza Central::L3"
+        ],
+        "top_bridge_slots": [
+          {
+            "slot_id": "Plaza Central::L3",
+            "frame_name": "Plaza Central",
+            "graph_betweenness": 0.23391906731827677,
+            "graph_closeness": 0.4423076923076923,
+            "graph_distance_to_plaza": 0.0
+          },
+          {
+            "slot_id": "Plaza Central::L2",
+            "frame_name": "Plaza Central",
+            "graph_betweenness": 0.23391906731827675,
+            "graph_closeness": 0.4423076923076923,
+            "graph_distance_to_plaza": 0.0
+          },
+          {
+            "slot_id": "Barrio Comercial::L1",
+            "frame_name": "Barrio Comercial",
+            "graph_betweenness": 0.2290282565480194,
+            "graph_closeness": 0.4423076923076923,
+            "graph_distance_to_plaza": 1.0
+          },
+          {
+            "slot_id": "Darsena Sur::L0",
+            "frame_name": "Darsena Sur",
+            "graph_betweenness": 0.22902825654801937,
+            "graph_closeness": 0.4423076923076923,
+            "graph_distance_to_plaza": 1.0
+          },
+          {
+            "slot_id": "Barrio Comercial::L0",
+            "frame_name": "Barrio Comercial",
+            "graph_betweenness": 0.11825035965352172,
+            "graph_closeness": 0.38333333333333336,
+            "graph_distance_to_plaza": 1.0
+          }
+        ],
+        "top_bridge_frames": [
+          {
+            "frame_name": "Plaza Central",
+            "frame_betweenness": 0.35000000000000003,
+            "frame_closeness": 0.8333333333333334,
+            "frame_distance_to_plaza": 0.0
+          },
+          {
+            "frame_name": "Barrio Comercial",
+            "frame_betweenness": 0.15000000000000002,
+            "frame_closeness": 0.7142857142857143,
+            "frame_distance_to_plaza": 1.0
+          },
+          {
+            "frame_name": "Darsena Sur",
+            "frame_betweenness": 0.15000000000000002,
+            "frame_closeness": 0.7142857142857143,
+            "frame_distance_to_plaza": 1.0
+          },
+          {
+            "frame_name": "Periferia",
+            "frame_betweenness": 0.05,
+            "frame_closeness": 0.625,
+            "frame_distance_to_plaza": 2.0
+          },
+          {
+            "frame_name": "Ribera Noreste",
+            "frame_betweenness": 0.0,
+            "frame_closeness": 0.625,
+            "frame_distance_to_plaza": 1.0
+          }
+        ]
+      },
+      "graph_summary": {
+        "slot_degree_mean": 3.333333,
+        "slot_distance_to_plaza_mean": 1.416667,
+        "slot_betweenness_top_share": 0.111663,
+        "frame_betweenness_gap": 0.35,
+        "frame_closeness_std": 0.075716,
+        "overcentralized_frame": "Plaza Central",
+        "component_count": 1
+      },
+      "representative_player_count": 4
+    },
+    "final_board_graph_summary": {
+      "slot_degree_mean": 3.261111,
+      "slot_distance_to_plaza_mean": 1.2472223333333332,
+      "slot_betweenness_top_share": 0.13562633333333332,
+      "frame_betweenness_gap": 0.3944446666666666,
+      "frame_closeness_std": 0.11134966666666668,
+      "component_count": 1.0,
+      "most_common_overcentralized_frame": "Plaza Central"
+    }
+  }
+}

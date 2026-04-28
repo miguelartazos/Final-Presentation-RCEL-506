@@ -1,0 +1,34 @@
+{
+  "version": "hard-autoresearch-tuned-candidate-55",
+  "weights": {
+    "cost": -0.0001375672028167173,
+    "income": 0.0007231131071341225,
+    "valuationPoints": 0.9727641581557691,
+    "placementAffinity": 0.09170949589461089,
+    "brand": 0.010159905510954553,
+    "handPressure": 0.24210789958015086,
+    "temporaryFocus": -0.009771140245720747,
+    "projectedNetValue": 8.125643478706457e-7,
+    "remainingQuarters": -0.10806966824457048,
+    "cashAfterAction": 0.00007389493066817522,
+    "staffFit": 0.03275825008749961,
+    "launchAffordability": -0.005246158223599223,
+    "departmentHasLegalAction": 0.2232347900979221,
+    "cashNeed": 0.00012992549946065992,
+    "loanCapacity": -0.09276266405358913,
+    "debtPenaltyProjected": -0.6950128221884371,
+    "runwayAfterAction": 0.00005666283643338829,
+    "financeExploitRisk": -10.60391654772684
+  },
+  "planner": {
+    "oportunidadesNeed": 2.8774854015558957,
+    "lanzarLegalAction": -0.2784471542108804,
+    "talentoUnderstaffed": 5.503367797937244,
+    "crecerPortfolio": 0.12102993186563255,
+    "finanzasCashNeed": 1.7130059227347374,
+    "finanzasLoanNeed": 4.420052388450131,
+    "noLegalActionPenalty": -1.9437292835675182,
+    "healthyFinancePenalty": -8.81902568996884,
+    "safeNoOpPenalty": -3.568966284394264
+  }
+}

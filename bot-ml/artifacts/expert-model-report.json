@@ -1,0 +1,62 @@
+{
+  "modelType": "linear action scorer",
+  "modelVersion": "expert-linear-v0.3-seat-rotated-mc40",
+  "featureNames": [
+    "cash",
+    "brand",
+    "netProfit",
+    "businessCount",
+    "handCount",
+    "actionCost",
+    "actionIncome",
+    "actionVP",
+    "placementAffinity",
+    "usesTemporaryFocus"
+  ],
+  "intercept": 0.15,
+  "coefficients": {
+    "cash": 0.11992984850890932,
+    "brand": 0.15802709356648847,
+    "netProfit": 0.08554860195145012,
+    "businessCount": 0.010099704202730209,
+    "handCount": 0.013543115258216859,
+    "actionCost": -0.6320261023356578,
+    "actionIncome": 0.881552797765471,
+    "actionVP": 0.831009820709005,
+    "placementAffinity": 0.25051854057237505,
+    "usesTemporaryFocus": 0.06949690679321063
+  },
+  "validationNote": "The benchmark is seat-rotated. Random diagnostic play is tracked separately from app difficulty and is not used as the baseline.",
+  "topFeatures": [
+    {
+      "feature": "actionIncome",
+      "coefficient": 0.881552797765471,
+      "absoluteCoefficient": 0.881552797765471,
+      "interpretation": "Higher income improves the action score after normalization."
+    },
+    {
+      "feature": "actionVP",
+      "coefficient": 0.831009820709005,
+      "absoluteCoefficient": 0.831009820709005,
+      "interpretation": "The expert bot prefers moves that add valuation points."
+    },
+    {
+      "feature": "actionCost",
+      "coefficient": -0.6320261023356578,
+      "absoluteCoefficient": 0.6320261023356578,
+      "interpretation": "Expensive actions are penalized unless their upside is high."
+    },
+    {
+      "feature": "placementAffinity",
+      "coefficient": 0.25051854057237505,
+      "absoluteCoefficient": 0.25051854057237505,
+      "interpretation": "Physical businesses are rewarded for matching the board district."
+    },
+    {
+      "feature": "brand",
+      "coefficient": 0.15802709356648847,
+      "absoluteCoefficient": 0.15802709356648847,
+      "interpretation": "Context feature used by the linear action scorer."
+    }
+  ]
+}

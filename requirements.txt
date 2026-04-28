@@ -1,0 +1,13 @@
+numpy
+pandas
+matplotlib
+networkx
+python-pptx
+seaborn
+PyYAML
+openpyxl
+python-ternary
+streamlit>=1.37
+jupyterlab
+nbconvert
+ipykernel

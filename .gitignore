@@ -1,0 +1,23 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+.pytest_cache/
+.ipynb_checkpoints/
+
+# Editor / OS
+.DS_Store
+.idea/
+.vscode/
+
+# Generated outputs that should be regenerated, not committed
+*_executed.ipynb
+final_pipeline_executed.ipynb
+
+# Local-only slide build helper. The submitted slide artifact is the PPTX in slides/.
+src/create_final_slides_v2.py
+
+# Streamlit
+.streamlit/secrets.toml

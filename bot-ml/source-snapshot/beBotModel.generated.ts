@@ -1,0 +1,66 @@
+/**
+ * Generated offline bot model artifact.
+ *
+ * V1 intentionally ships a small linear scorer instead of an on-device ML runtime.
+ * The training workspace regenerates this shape so the app can consume a stable,
+ * inspectable artifact without depending on Python, sklearn, or native model loaders.
+ */
+
+export const BOT_MODEL_VERSION = 'expert-linear-v0.3-seat-rotated-mc40';
+export const BOT_RULES_VERSION = 'be-mvp-rules-v3';
+export const BOT_CARD_DATA_VERSION = 'app-card-registry';
+
+export const BOT_MODEL_FEATURES = [
+  'cash',
+  'brand',
+  'netProfit',
+  'businessCount',
+  'handCount',
+  'actionCost',
+  'actionIncome',
+  'actionVP',
+  'placementAffinity',
+  'usesTemporaryFocus',
+] as const;
+
+export type BEBotModelFeature = typeof BOT_MODEL_FEATURES[number];
+
+export const EXPERT_BOT_LINEAR_MODEL = {
+  intercept: 0.15,
+  coefficients: {
+    cash: 0.11992984850890932,
+    brand: 0.15802709356648847,
+    netProfit: 0.08554860195145012,
+    businessCount: 0.010099704202730209,
+    handCount: 0.013543115258216859,
+    actionCost: -0.6320261023356578,
+    actionIncome: 0.881552797765471,
+    actionVP: 0.831009820709005,
+    placementAffinity: 0.25051854057237505,
+    usesTemporaryFocus: 0.06949690679321063,
+  },
+  means: {
+    cash: 10000,
+    brand: 1,
+    netProfit: 0,
+    businessCount: 1.5,
+    handCount: 4,
+    actionCost: 0,
+    actionIncome: 0,
+    actionVP: 3,
+    placementAffinity: 0.25,
+    usesTemporaryFocus: 0.1,
+  },
+  scales: {
+    cash: 5000,
+    brand: 3,
+    netProfit: 2500,
+    businessCount: 2,
+    handCount: 3,
+    actionCost: 5000,
+    actionIncome: 3000,
+    actionVP: 4,
+    placementAffinity: 1,
+    usesTemporaryFocus: 1,
+  },
+} as const;
