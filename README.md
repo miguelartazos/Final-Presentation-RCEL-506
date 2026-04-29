@@ -102,6 +102,9 @@ Streamlit Cloud deployment:
 ## Model notes
 
 - **R² = 0.0905 is modest.** Ridge is a diagnostic surrogate on N=56 with high simulation noise, not an acceptance gate. The MAE improvement of 9.4% over the naive mean is the baseline-comparison result.
+- **No reported ML metric is perfect.** The presentation uses out-of-fold metrics, not the optimistic full-fit score. A perfect R² near `1.0` would be a warning sign on this dataset.
+- **Bot coefficients are standardized weights, not accuracy.** For example, `actionIncome = +0.88` means income strongly increases the action score after normalization; it is not a model score of 88%.
+- **Ridge alpha is testable live.** `notebooks/final_pipeline.ipynb` includes an alpha-sensitivity table so the regularization trade-off can be shown by changing the grid.
 - **0 card edits accepted is intentional.** `reports/search_trace.csv` shows 145 candidates evaluated and rejected. The optimizer rejected edits that did not hold up during confirmation runs.
 - **The hard tuned heuristic (+8.51 score lift) outperforms the expert ML scorer (+2.37 score lift).** Both beat the medium baseline. On small-sample action ranking with well-engineered domain features, search beats parametric models.
 
